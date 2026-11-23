@@ -1,0 +1,33 @@
+{
+  "name": "emergency-csection-alert-system",
+  "version": "1.0.0",
+  "description": "Emergency C-Section Team Alert System for Soroka Hospital",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "client": "cd client && npm start",
+    "dev:all": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "keywords": [
+    "healthcare",
+    "emergency",
+    "alert",
+    "hospital"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1",
+    "sql.js": "^1.10.3",
+    "twilio": "^6.3.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  }
+}
